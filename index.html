@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/styles.css" rel="stylesheet" />
+
+    <!-- Importing icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form">
+      <div class="title">Get Started</div>
+
+      <!-- User Name input -->
+
+      <div>
+        <label for="username">User Name</label>
+        <i class="fas fa-user"></i>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          class="text-input"
+          placeholder="Name"
+        />
+        <i class="fas fa-exclamation-circle failure-icon"></i>
+        <i class="far fa-check-circle success-icon"></i>
+        <!-- Error message -->
+        <div class="error"></div>
+      </div>
+
+      <!-- Email input -->
+      <div>
+        <label for="email">Email</label>
+        <i class="far fa-envelope"></i>
+
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="text-input"
+          placeholder="your@email.com"
+        />
+
+        <i class="fas fa-exclamation-circle failure-icon"></i>
+        <i class="far fa-check-circle success-icon"></i>
+
+        <div class="error"></div>
+      </div>
+
+      <!-- Password input -->
+      <div>
+        <label for="password">Password</label>
+        <i class="fas fa-lock"></i>
+
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="text-input"
+          placeholder="Enter password"
+        />
+        <i class="fas fa-exclamation-circle failure-icon"></i>
+        <i class="far fa-check-circle success-icon"></i>
+
+        <div class="error"></div>
+      </div>
+
+      <!-- Telephone input -->
+      <div>
+        <label for="phonenumber">Phone</label>
+        <i class="fas fa-phone"></i>
+
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          class="text-input"
+          placeholder="Phone number"
+        />
+        <i class="fas fa-exclamation-circle failure-icon"></i>
+        <i class="far fa-check-circle success-icon"></i>
+
+        <div class="error"></div>
+      </div>
+
+      <!-- Checkbox -->
+
+      <div id="checkbox">
+        <input type="checkbox" id="my-checkbox" onclick="isChecked()" />
+        <p id="message" class="checkbox-msg">I want the newsletter!</p>
+      </div>
+
+      <!-- Submit button -->
+      <button id="btn" type="submit">Submit</button>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>
